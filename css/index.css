@@ -1,0 +1,76 @@
+/* Define @font-face rule */
+@font-face {
+  font-family: 'Sansation';
+  src: url('fonts/Sansation_Bold.ttf') format('truetype'),
+       url('fonts/Sansation_Bold_Italic.ttf') format('truetype'),
+       url('fonts/Sansation_Italic.ttf') format('truetype'),
+       url('fonts/Sansation_Light.ttf') format('truetype'),
+       url('fonts/Sansation_Light_Italic.ttf') format('truetype'),
+       url('fonts/Sansation_Regular.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Sansantion, Arial, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #0C0707;
+  padding: 10px 20px;
+  z-index: 999;
+}
+
+.logo img {
+  height: 80px; /* Adjust height as needed */
+}
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Sansation;
+  font-style:normal;
+  font-size:larger;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration:none;
+  color: #AF60DF;
+  padding: 5px 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.content {
+  max-width: 340px;
+  text-align: justify;
+  color: white;
+  font-family: Sansation;
+  font-style: italic;
+  padding: 50px;
+}
+
+h1 {
+  font-family: Sansation;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
